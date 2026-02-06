@@ -11,10 +11,10 @@ const Team = () => {
     const teamMembers = [
         {
             id: 1,
-            name: 'Sarah',
+            name: 'Dom',
             role: 'Master Stylist',
-            image: 'https://images.unsplash.com/photo-1542596594-649edbc13630?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-            bio: 'James has over 15 years of experience in precision cutting and classic grooming. He founded Main Space to bring a premium yet accessible barbering experience to the community.',
+            image: '',
+            bio: 'Dom discovered his passion for barbering in high school, where he started cutting friends/ hair and quickly realized he had a gift. Starting from nothing but a pair of clippers and a dream, he built his reputation one haircut at a time. Through unwavering determination, Dom transformed that humble beginning into The Main Space Barbershop, proving that passion combined with relentless work ethic can turn a high school side hustle into a thriving legacy.',
             socials: { instagram: '#' }
         },
         {
@@ -22,7 +22,7 @@ const Team = () => {
             name: 'James',
             role: 'Senior Stylist',
             image: 'https://images.unsplash.com/photo-1579758629938-03607ccdbaba?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
-            bio: 'Specializing in modern texturizing and beard sculpting, Sarah brings a creative flair to every cut. She loves helping clients find a style that perfectly suits their face shape.',
+            bio: 'Specializing in modern texturizing and beard sculpting, James brings a creative flair to every cut. She loves helping clients find a style that perfectly suits their face shape.',
             socials: { instagram: '#' }
         },
         {
