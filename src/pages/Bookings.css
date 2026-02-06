@@ -1,0 +1,24 @@
+.booking-container-simple {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.iframe-container {
+    width: 100%;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    min-height: 600px;
+}
+
+.booking-iframe-full {
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    border: none;
+    display: block;
+}
+
+/* Remove old styles if they conflict or are unused, 
+   but keeping generic ones for safety if referenced elsewhere */

@@ -1,0 +1,50 @@
+@import './styles/variables.css';
+
+/* Global Resets & Utilities */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: var(--color-dark-green);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: #143d30;
+  /* Darker shade of green */
+}
+
+.btn-secondary {
+  background-color: var(--color-tan);
+  color: var(--color-black);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-tan-hover);
+}
+
+.section-padding {
+  padding: var(--spacing-lg) 0;
+}

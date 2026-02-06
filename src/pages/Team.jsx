@@ -1,0 +1,85 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { Instagram, Twitter, Linkedin } from 'lucide-react';
+import { useBooking } from '../context/BookingContext';
+import './Team.css';
+
+const Team = () => {
+    const navigate = useNavigate();
+    const { openBookingModal } = useBooking();
+
+    const teamMembers = [
+        {
+            id: 1,
+            name: 'James',
+            role: 'Master Stylist',
+            image: 'https://images.unsplash.com/photo-1542596594-649edbc13630?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+            bio: 'James has over 15 years of experience in precision cutting and classic grooming. He founded Main Space to bring a premium yet accessible barbering experience to the community.',
+            socials: { instagram: '#', twitter: '#' }
+        },
+        {
+            id: 2,
+            name: 'Sarah',
+            role: 'Senior Stylist',
+            image: 'https://images.unsplash.com/photo-1579758629938-03607ccdbaba?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+            bio: 'Specializing in modern texturizing and beard sculpting, Sarah brings a creative flair to every cut. She loves helping clients find a style that perfectly suits their face shape.',
+            socials: { instagram: '#', linkedin: '#' }
+        },
+        {
+            id: 3,
+            name: 'Mike',
+            role: 'Stylist',
+            image: 'https://images.unsplash.com/photo-1618077360395-f3068be8e001?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+            bio: 'The freshest talent at Main Space, Mike is a master of fades and sharp lines. His attention to detail ensures you leave the chair looking crisp and clean every time.',
+            socials: { instagram: '#' }
+        }
+    ];
+
+    const handleBookStylist = (stylist) => {
+        openBookingModal();
+    };
+
+    return (
+        <div className="team-page section-padding">
+            <div className="container">
+                <div className="section-header">
+                    <h2 className="section-title">Meet the Team</h2>
+                    <div className="section-divider"></div>
+                    <p className="section-subtitle"> The talent behind the shears.</p>
+                </div>
+
+                <div className="team-grid">
+                    {teamMembers.map(member => (
+                        <div key={member.id} className="team-card">
+                            <div className="team-image-container">
+                                <img src={member.image} alt={member.name} className="team-image" />
+                            </div>
+                            <div className="team-info">
+                                <div className="team-header">
+                                    <h3>{member.name}</h3>
+                                    <span className="team-role">{member.role}</span>
+                                </div>
+                                <p className="team-bio">{member.bio}</p>
+                                <div className="team-footer">
+                                    <div className="team-socials">
+                                        {member.socials.instagram && <Instagram size={20} className="social-icon" />}
+                                        {member.socials.twitter && <Twitter size={20} className="social-icon" />}
+                                        {member.socials.linkedin && <Linkedin size={20} className="social-icon" />}
+                                    </div>
+                                    <button
+                                        className="btn btn-primary btn-sm"
+                                        onClick={() => handleBookStylist(member)}
+                                    >
+                                        Book {member.name}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Team;
