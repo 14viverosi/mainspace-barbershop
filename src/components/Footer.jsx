@@ -2,8 +2,10 @@ import React from 'react';
 import './Footer.css';
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return (
-        <footer className="footer">
+        <footer className="footer section-padding">
             <div className="footer-container container">
                 <div className="footer-content">
                     <div className="footer-brand">
