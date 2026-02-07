@@ -16,8 +16,8 @@
   --color-text-light: #f9f9f9;
 
   /* Typography */
-  --font-heading: 'Oswald', 'Helvetica Neue', sans-serif;
-  --font-body: 'Roboto', 'Segoe UI', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
 
   /* Spacing */
   --spacing-xs: 0.5rem;

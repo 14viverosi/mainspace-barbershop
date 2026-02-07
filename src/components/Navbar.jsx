@@ -4,7 +4,7 @@ import { Menu, X } from 'lucide-react';
 import { useBooking } from '../context/BookingContext';
 import './Navbar.css';
 
-import logo from '../assets/logo-full.png';
+import logo from '../assets/logo-vector-user.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +23,7 @@ const Navbar = () => {
             <div className="navbar-container container">
                 <Link to="/" className="navbar-logo" onClick={closeMenu}>
                     <img src={logo} alt="The Mane Space" className="logo-image" />
+                    <span className="logo-text">The Mane Space</span>
                 </Link>
 
                 {/* Desktop Menu */}
