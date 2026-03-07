@@ -123,6 +123,7 @@ function App() {
           </main>
           <Footer />
           <ModalWrapper />
+          <FloatingBookBtn />
         </div>
       </BookingProvider>
     </ErrorBoundary>

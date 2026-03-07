@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import logo from '../assets/logo-vector-user.png';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -9,8 +10,11 @@ const Footer = () => {
             <div className="footer-container container">
                 <div className="footer-content">
                     <div className="footer-brand">
-                        <h3>The Mane Space</h3>
-                        <p>Your Look. Your Space.</p>
+                        <img src={logo} alt="The Mane Space" className="footer-logo-image" />
+                        <div className="footer-logo-text-container">
+                            <span className="footer-logo-text-top">THE MANE</span>
+                            <span className="footer-logo-text-bottom">SPACE</span>
+                        </div>
                     </div>
                     <div className="footer-socials">
                         <a href="#" className="social-link">Instagram</a>

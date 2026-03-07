@@ -40,12 +40,37 @@
 }
 
 .logo-image {
-    height: 40px;
+    height: 55px;
+    mix-blend-mode: multiply;
 }
 
-.logo-text {
-    font-size: 1.5rem;
+.logo-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.logo-text-top {
+    font-size: 1.6rem;
+    font-family: var(--font-body);
+    font-weight: 800;
     color: var(--color-black);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2px;
+}
+
+.logo-text-bottom {
+    font-size: 0.8rem;
+    font-family: var(--font-body);
+    font-weight: 400;
+    color: var(--color-black);
+    text-transform: uppercase;
+    letter-spacing: 0.55em;
+    margin-right: -0.55em;
+    /* Visually centers text with high letter-spacing */
 }
 
 .navbar-links {
@@ -54,7 +79,7 @@
     gap: var(--spacing-sm);
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 1101px) {
     .navbar-links {
         position: absolute;
         left: 50%;
@@ -93,7 +118,7 @@
     /* Touch target */
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1100px) {
     .navbar-links {
         display: flex;
         flex-direction: column;

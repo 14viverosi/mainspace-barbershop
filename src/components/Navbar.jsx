@@ -32,7 +32,10 @@ const Navbar = () => {
                 <div className="nav-left">
                     <a href="#" className="navbar-logo" onClick={() => setIsOpen(false)}>
                         <img src={logo} alt="The Mane Space" className="logo-image" />
-                        <span className="logo-text">The Mane Space</span>
+                        <div className="logo-text-container">
+                            <span className="logo-text-top">THE MANE</span>
+                            <span className="logo-text-bottom">SPACE</span>
+                        </div>
                     </a>
                 </div>
 

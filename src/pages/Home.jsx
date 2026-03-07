@@ -12,7 +12,7 @@ const Home = () => {
 
     useEffect(() => {
         let animationId;
-        const speed = 0.15; // Extremely slow scrolling for relaxed reading pace
+        const speed = 0.35; // slightly faster scrolling for better pacing
         let currentScroll = 0; // Track the exact decimal pixel value
 
         const autoScroll = () => {
@@ -86,7 +86,7 @@ const Home = () => {
                     <div className="hero-content">
                         <h1 className="hero-title">Redefining Hair Grooming at The Mane Space</h1>
                         <p className="hero-subtitle">The Mane Space is a men and woman’s hair salon that specializes in elevated hair services, attention to detail, and true sense of community.</p>
-                        <button onClick={openBookingModal} className="btn btn-primary">Book Now</button>
+                        <button onClick={openBookingModal} className="btn btn-primary">Book Appointment Now</button>
                     </div>
                 </div>
             </section>
@@ -105,7 +105,7 @@ const Home = () => {
                         <div className="sticky-sidebar">
                             <h2 className="section-title">Transparent Pricing,<br />Premium Quality</h2>
                             <p className="section-desc">Experience our full range of men’s grooming services, tailoring traditional techniques for the modern gentleman.</p>
-                            <button onClick={openBookingModal} className="btn btn-secondary desktop-only">Book Now</button>
+                            <button onClick={openBookingModal} className="btn btn-primary desktop-only">Book Now</button>
                         </div>
                         <div className="pricing-list">
                             <div className="price-item">
@@ -246,7 +246,7 @@ const Home = () => {
                     <h2 className="section-title">Contact us</h2>
                     <p>Got a question? Reach out or stop by, we’re here to help.</p>
                     <div className="contact-links">
-                        <a href="https://maps.app.goo.gl/" target="_blank" rel="noreferrer" className="contact-link">123 Barber Street, Cityville</a>
+                        <a href="https://maps.app.goo.gl/" target="_blank" rel="noreferrer" className="contact-link">123 Barber Street, Cleveland, OH</a>
                         <a href="#" className="contact-link">Instagram</a>
                     </div>
                 </div>
